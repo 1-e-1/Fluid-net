@@ -10,7 +10,7 @@ import torch.nn.functional as F
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
 
-ROOT = Path(str(__import__('pathlib').Path(__file__).resolve().parents[1]))
+ROOT = Path(str(__import__('pathlib').Path(__file__).resolve().parents[2]))
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "experiments_v2" / "models"))
 

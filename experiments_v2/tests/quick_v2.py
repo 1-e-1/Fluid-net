@@ -14,8 +14,8 @@ device = torch.device("cuda:0")
 torch.set_float32_matmul_precision("high")
 
 t = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5,), (0.5,))])
-tr = make_subset(datasets.MNIST(str(__import__('pathlib').Path(__file__).resolve().parents[1] / 'data'), train=True, download=False, transform=t), 2000)
-vl = make_subset(datasets.MNIST(str(__import__('pathlib').Path(__file__).resolve().parents[1] / 'data'), train=False, download=False, transform=t), 800)
+tr = make_subset(datasets.MNIST(str(__import__('pathlib').Path(__file__).resolve().parents[2] / 'data'), train=True, download=False, transform=t), 2000)
+vl = make_subset(datasets.MNIST(str(__import__('pathlib').Path(__file__).resolve().parents[2] / 'data'), train=False, download=False, transform=t), 800)
 tr_ldr = DataLoader(tr, 64, shuffle=True, drop_last=True)
 vl_ldr = DataLoader(vl, 64)
 
@@ -34,8 +34,8 @@ r2["dataset"] = "MNIST"; results.append(r2)
 print("V2-S(500): acc={:.4f} P={:,} {:.0f}s".format(r2["val_acc"], r2["params"], r2["seconds"]))
 
 # FMNIST
-tr2 = make_subset(datasets.FashionMNIST(str(__import__('pathlib').Path(__file__).resolve().parents[1] / 'data'), train=True, download=False, transform=t), 2000)
-vl2 = make_subset(datasets.FashionMNIST(str(__import__('pathlib').Path(__file__).resolve().parents[1] / 'data'), train=False, download=False, transform=t), 800)
+tr2 = make_subset(datasets.FashionMNIST(str(__import__('pathlib').Path(__file__).resolve().parents[2] / 'data'), train=True, download=False, transform=t), 2000)
+vl2 = make_subset(datasets.FashionMNIST(str(__import__('pathlib').Path(__file__).resolve().parents[2] / 'data'), train=False, download=False, transform=t), 800)
 tr_ldr2 = DataLoader(tr2, 64, shuffle=True, drop_last=True)
 vl_ldr2 = DataLoader(vl2, 64)
 

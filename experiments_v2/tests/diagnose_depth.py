@@ -70,9 +70,9 @@ class TwoLayerFluidNet(nn.Module):
 
 # Data
 t = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5,), (0.5,))])
-tr = Subset(datasets.MNIST(str(__import__('pathlib').Path(__file__).resolve().parents[1] / 'data'), train=True, download=False, transform=t),
+tr = Subset(datasets.MNIST(str(__import__('pathlib').Path(__file__).resolve().parents[2] / 'data'), train=True, download=False, transform=t),
             np.random.default_rng(42).choice(60000, 2000, replace=False).tolist())
-vl = Subset(datasets.MNIST(str(__import__('pathlib').Path(__file__).resolve().parents[1] / 'data'), train=False, download=False, transform=t),
+vl = Subset(datasets.MNIST(str(__import__('pathlib').Path(__file__).resolve().parents[2] / 'data'), train=False, download=False, transform=t),
             np.random.default_rng(42).choice(10000, 500, replace=False).tolist())
 tr_ldr = DataLoader(tr, 64, shuffle=True, drop_last=True)
 vl_ldr = DataLoader(vl, 64)

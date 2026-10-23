@@ -17,7 +17,7 @@ from pathlib import Path
 import torch, torch.nn as nn
 import torch.nn.functional as F
 
-ROOT = Path(str(__import__('pathlib').Path(__file__).resolve().parents[1]))
+ROOT = Path(str(__import__('pathlib').Path(__file__).resolve().parents[2]))
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "experiments_v3" / "models"))
 sys.path.insert(0, str(ROOT / "experiments_v3" / "tests"))

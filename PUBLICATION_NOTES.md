@@ -16,3 +16,5 @@ Export-only maintenance fix: `improvements/benchmark_all_v2.py` had an existing
 validation-loop indentation error and reused stale training logits. The public
 copy now indents both branches correctly and extracts validation logits using
 the same rule as its training loop. No benchmark results were regenerated.
+
+Publication path correction (2026-10-24): generated project-root anchors in nested benchmark/model scripts were one directory too shallow. They now resolve to the cloned repository root. This export-only correction changes no original model equation or recorded benchmark result.

@@ -23,7 +23,7 @@ import torch, torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import DataLoader, Dataset, TensorDataset
 
-ROOT = Path(str(__import__('pathlib').Path(__file__).resolve().parents[1]))
+ROOT = Path(str(__import__('pathlib').Path(__file__).resolve().parents[2]))
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "experiments_v3" / "models"))
 

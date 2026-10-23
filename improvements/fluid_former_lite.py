@@ -103,8 +103,8 @@ def train_and_compare():
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     
     t = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5,), (0.5,))])
-    tr_ds = datasets.MNIST(str(__import__('pathlib').Path(__file__).resolve().parents[0] / 'data'), train=True, download=False, transform=t)
-    vl_ds = datasets.MNIST(str(__import__('pathlib').Path(__file__).resolve().parents[0] / 'data'), train=False, download=False, transform=t)
+    tr_ds = datasets.MNIST(str(__import__('pathlib').Path(__file__).resolve().parents[1] / 'data'), train=True, download=False, transform=t)
+    vl_ds = datasets.MNIST(str(__import__('pathlib').Path(__file__).resolve().parents[1] / 'data'), train=False, download=False, transform=t)
     tr = Subset(tr_ds, np.random.default_rng(42).choice(60000, 3000, replace=False).tolist())
     vl = Subset(vl_ds, np.random.default_rng(42).choice(10000, 1000, replace=False).tolist())
     tr_ldr = DataLoader(tr, 64, shuffle=True, drop_last=True)

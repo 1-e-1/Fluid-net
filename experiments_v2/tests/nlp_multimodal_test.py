@@ -13,7 +13,7 @@ import torch.nn.functional as F
 from torch.utils.data import DataLoader, Subset, TensorDataset
 from torchvision import datasets, transforms
 
-ROOT = Path(str(__import__('pathlib').Path(__file__).resolve().parents[1]))
+ROOT = Path(str(__import__('pathlib').Path(__file__).resolve().parents[2]))
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "experiments_v2" / "models"))
 
@@ -207,8 +207,8 @@ def train_eval(model, tr_ldr, vl_ldr, device, steps, lr, wd, name,
 def run_cv_baseline(device):
     """快速CV基线: MNIST"""
     t = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5,), (0.5,))])
-    tr = make_subset(datasets.MNIST(str(__import__('pathlib').Path(__file__).resolve().parents[1] / 'data'), train=True, download=False, transform=t), 3000)
-    vl = make_subset(datasets.MNIST(str(__import__('pathlib').Path(__file__).resolve().parents[1] / 'data'), train=False, download=False, transform=t), 1000)
+    tr = make_subset(datasets.MNIST(str(__import__('pathlib').Path(__file__).resolve().parents[2] / 'data'), train=True, download=False, transform=t), 3000)
+    vl = make_subset(datasets.MNIST(str(__import__('pathlib').Path(__file__).resolve().parents[2] / 'data'), train=False, download=False, transform=t), 1000)
     tr_ldr = DataLoader(tr, 64, shuffle=True, drop_last=True)
     vl_ldr = DataLoader(vl, 64)
 

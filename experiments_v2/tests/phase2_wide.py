@@ -83,8 +83,8 @@ if __name__ == "__main__":
     t = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5,), (0.5,))])
     
     for ds_name, ds_cls in [("MNIST", datasets.MNIST), ("FashionMNIST", datasets.FashionMNIST)]:
-        tr = make_subset(ds_cls(str(__import__('pathlib').Path(__file__).resolve().parents[1] / 'data'), train=True, download=False, transform=t), 3000)
-        vl = make_subset(ds_cls(str(__import__('pathlib').Path(__file__).resolve().parents[1] / 'data'), train=False, download=False, transform=t), 1000)
+        tr = make_subset(ds_cls(str(__import__('pathlib').Path(__file__).resolve().parents[2] / 'data'), train=True, download=False, transform=t), 3000)
+        vl = make_subset(ds_cls(str(__import__('pathlib').Path(__file__).resolve().parents[2] / 'data'), train=False, download=False, transform=t), 1000)
         tr_ldr = DataLoader(tr, 64, shuffle=True, drop_last=True)
         vl_ldr = DataLoader(vl, 64)
         steps = 500 if ds_name == "MNIST" else 400

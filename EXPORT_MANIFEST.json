@@ -393,5 +393,44 @@
   "note": "Hashes identify original copied files before export-only edits. Generated release files are additional. No raw datasets/checkpoints are distributed.",
   "maintenance_fixes": [
     "improvements/benchmark_all_v2.py: validation indentation and current-batch logits"
-  ]
+  ],
+  "path_anchor_correction": {
+    "date": "2026-10-24",
+    "files": [
+      "improvements/fluid_former_lite.py",
+      "experiments_v3/models/improved_fluid.py",
+      "experiments_v3/models/pro_max_nc.py",
+      "experiments_v3/tests/deep_adr_test.py",
+      "experiments_v3/tests/full_benchmark.py",
+      "experiments_v3/tests/hierarchical_test.py",
+      "experiments_v3/tests/nocompress_generation.py",
+      "experiments_v3/tests/nocompress_nlp_mm.py",
+      "experiments_v3/tests/nocompress_test.py",
+      "experiments_v3/tests/pro_max_nc_ablation.py",
+      "experiments_v3/tests/pro_max_nc_bench.py",
+      "experiments_v3/tests/recursive_decode_transformer.py",
+      "experiments_v3/tests/rpt_decode_v2.py",
+      "experiments_v3/tests/rpt_decode_v3.py",
+      "experiments_v3/tests/rpt_decode_v4.py",
+      "experiments_v3/tests/rpt_decode_v5.py",
+      "experiments_v3/tests/strict_compare.py",
+      "experiments_v3/tests/temporal_suite.py",
+      "experiments_v3/vla/benchmark_quad_modal.py",
+      "experiments_v3/vla/quad_modal_vla.py",
+      "experiments_v3/vla/test_pusht.py",
+      "experiments_v3/vla/vla_benchmark.py",
+      "experiments_v2/models/deep_fluid.py",
+      "experiments_v2/tests/benchmark.py",
+      "experiments_v2/tests/diagnose_depth.py",
+      "experiments_v2/tests/fix_depth_test.py",
+      "experiments_v2/tests/lean_test.py",
+      "experiments_v2/tests/nlp_multimodal_test.py",
+      "experiments_v2/tests/phase1_fluidformer_v2.py",
+      "experiments_v2/tests/phase1_v2.py",
+      "experiments_v2/tests/phase2_wide.py",
+      "experiments_v2/tests/quick_test.py",
+      "experiments_v2/tests/quick_v2.py"
+    ],
+    "scope": "public copy only; original working project unchanged"
+  }
 }

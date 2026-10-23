@@ -91,8 +91,8 @@ if __name__ == "__main__":
 
     all_results = []
     for ds_name, ds_cls in [("MNIST", datasets.MNIST), ("FashionMNIST", datasets.FashionMNIST)]:
-        tr = make_subset(ds_cls(str(__import__('pathlib').Path(__file__).resolve().parents[1] / 'data'), train=True, download=False, transform=t), 3000)
-        vl = make_subset(ds_cls(str(__import__('pathlib').Path(__file__).resolve().parents[1] / 'data'), train=False, download=False, transform=t), 1000)
+        tr = make_subset(ds_cls(str(__import__('pathlib').Path(__file__).resolve().parents[2] / 'data'), train=True, download=False, transform=t), 3000)
+        vl = make_subset(ds_cls(str(__import__('pathlib').Path(__file__).resolve().parents[2] / 'data'), train=False, download=False, transform=t), 1000)
         tr_ldr = DataLoader(tr, 64, shuffle=True, drop_last=True)
         vl_ldr = DataLoader(vl, 64)
 
@@ -142,5 +142,5 @@ if __name__ == "__main__":
         f = fmnist.get(name, {})
         print(f"{name:<25s} {m.get('params',0):>9,} {m.get('val_acc',0):.4f}     {f.get('val_acc',0):.4f}")
 
-    with open(str(__import__('pathlib').Path(__file__).resolve().parents[1] / 'experiments_v2/results/lean_results.json'), "w") as fh:
+    with open(str(__import__('pathlib').Path(__file__).resolve().parents[2] / 'experiments_v2/results/lean_results.json'), "w") as fh:
         json.dump(all_results, fh, indent=2)

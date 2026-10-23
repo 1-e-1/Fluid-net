@@ -13,7 +13,7 @@ import torch.nn.functional as F
 from torch.utils.data import DataLoader, Subset
 from torchvision import datasets, transforms
 
-ROOT = Path(str(__import__('pathlib').Path(__file__).resolve().parents[1]))
+ROOT = Path(str(__import__('pathlib').Path(__file__).resolve().parents[2]))
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "experiments_v3" / "models"))
 
@@ -31,8 +31,8 @@ def run_cv_benchmark(device):
 
     for ds_name, ds_cls in [("MNIST", datasets.MNIST), ("FashionMNIST", datasets.FashionMNIST)]:
         tr_size = 5000 if ds_name == "FashionMNIST" else 3000
-        tr = make_subset(ds_cls(str(__import__('pathlib').Path(__file__).resolve().parents[1] / 'data'), train=True, download=False, transform=t), tr_size)
-        vl = make_subset(ds_cls(str(__import__('pathlib').Path(__file__).resolve().parents[1] / 'data'), train=False, download=False, transform=t), 1000)
+        tr = make_subset(ds_cls(str(__import__('pathlib').Path(__file__).resolve().parents[2] / 'data'), train=True, download=False, transform=t), tr_size)
+        vl = make_subset(ds_cls(str(__import__('pathlib').Path(__file__).resolve().parents[2] / 'data'), train=False, download=False, transform=t), 1000)
         tr_ldr = DataLoader(tr, 64, shuffle=True, drop_last=True)
         vl_ldr = DataLoader(vl, 64)
 
