@@ -1,0 +1,48 @@
+[
+  {
+    "model": "MNIS-1200step",
+    "params": 413928,
+    "val_acc": 0.987,
+    "dataset": "MNIST",
+    "domain": "CV",
+    "steps": 1200
+  },
+  {
+    "model": "Fash-1200step",
+    "params": 413928,
+    "val_acc": 0.895,
+    "dataset": "FashionMNIST",
+    "domain": "CV",
+    "steps": 1200
+  },
+  {
+    "model": "FMNIST-Large-Q",
+    "params": 1467200,
+    "val_acc": 0.905,
+    "dataset": "FashionMNIST",
+    "domain": "CV",
+    "steps": 1200
+  },
+  {
+    "model": "FMNIST-Large-Q-Ensemble-5x",
+    "params": 7336000,
+    "val_acc": 0.911,
+    "dataset": "FashionMNIST",
+    "domain": "CV",
+    "steps": 1200
+  },
+  {
+    "model": "NLP-Baseline-700step",
+    "params": 734568,
+    "val_acc": 0.8928,
+    "domain": "NLP",
+    "steps": 700
+  },
+  {
+    "model": "NLP-Ensemble-3x-700step",
+    "params": 2203704,
+    "val_acc": 0.8953,
+    "domain": "NLP",
+    "steps": 700
+  }
+]

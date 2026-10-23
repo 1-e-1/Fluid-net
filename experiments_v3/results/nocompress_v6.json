@@ -1,0 +1,26 @@
+[
+  {
+    "model": "Baseline-Q",
+    "params": 413928,
+    "val_acc": 0.982,
+    "seconds": 7.533099100000982
+  },
+  {
+    "model": "NC-V6(h16,L4,p4)",
+    "params": 702858,
+    "val_acc": 0.97,
+    "seconds": 96.18502150000131
+  },
+  {
+    "model": "NC-V6n(h16,L4,p4)",
+    "params": 701994,
+    "val_acc": 0.979,
+    "seconds": 95.97633560000031
+  },
+  {
+    "model": "NC-V6n(h24,L4,p2)",
+    "params": 736762,
+    "val_acc": 0.924,
+    "seconds": 104.01372370000172
+  }
+]

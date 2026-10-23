@@ -1,0 +1,58 @@
+[
+  {
+    "model": "Baseline",
+    "params": 413928,
+    "val_acc": 0.97,
+    "val_loss": 0.09109095141291618,
+    "seconds": 7.55124199999409,
+    "dataset": "MNIST"
+  },
+  {
+    "model": "Lean(h=8)",
+    "params": 325760,
+    "val_acc": 0.954,
+    "val_loss": 0.13787442684173584,
+    "seconds": 62.652954899996985,
+    "dataset": "MNIST"
+  },
+  {
+    "model": "Lean(h=12)",
+    "params": 335400,
+    "val_acc": 0.972,
+    "val_loss": 0.09550742463767528,
+    "seconds": 96.91246769999998,
+    "dataset": "MNIST"
+  },
+  {
+    "model": "Ensemble(3xLean-h8)",
+    "params": 977280,
+    "val_acc": 0.971,
+    "val_loss": 0.08379800635576248,
+    "seconds": 188.05524959999457,
+    "dataset": "MNIST"
+  },
+  {
+    "model": "Baseline",
+    "params": 413928,
+    "val_acc": 0.861,
+    "val_loss": 0.3912816638946533,
+    "seconds": 7.139078899999731,
+    "dataset": "FashionMNIST"
+  },
+  {
+    "model": "Lean(h=8)",
+    "params": 325760,
+    "val_acc": 0.816,
+    "val_loss": 0.49224162292480467,
+    "seconds": 62.9337280999971,
+    "dataset": "FashionMNIST"
+  },
+  {
+    "model": "Lean(h=12)",
+    "params": 335400,
+    "val_acc": 0.81,
+    "val_loss": 0.510166072845459,
+    "seconds": 96.98387990000629,
+    "dataset": "FashionMNIST"
+  }
+]

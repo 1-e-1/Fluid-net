@@ -1,0 +1,44 @@
+[
+  {
+    "model": "MNIS-Baseline-Q",
+    "params": 413928,
+    "val_acc": 0.986,
+    "seconds": 11.398300000000745,
+    "dataset": "MNIST"
+  },
+  {
+    "model": "MNIS-NC(L4)",
+    "params": 701994,
+    "val_acc": 0.984,
+    "seconds": 145.09560399999827,
+    "dataset": "MNIST"
+  },
+  {
+    "model": "MNIS-NC(L8)",
+    "params": 1252906,
+    "val_acc": 0.987,
+    "seconds": 289.7766733999997,
+    "dataset": "MNIST"
+  },
+  {
+    "model": "Fash-Baseline-Q",
+    "params": 413928,
+    "val_acc": 0.888,
+    "seconds": 11.044386800000211,
+    "dataset": "FashionMNIST"
+  },
+  {
+    "model": "Fash-NC(L4)",
+    "params": 701994,
+    "val_acc": 0.831,
+    "seconds": 145.4026961999989,
+    "dataset": "FashionMNIST"
+  },
+  {
+    "model": "Fash-NC(L8)",
+    "params": 1252906,
+    "val_acc": 0.853,
+    "seconds": 291.25743729999886,
+    "dataset": "FashionMNIST"
+  }
+]

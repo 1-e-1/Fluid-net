@@ -1,0 +1,66 @@
+[
+  {
+    "model": "2D Reach-MLP",
+    "params": 302083,
+    "val_mse": 0.023369919856389365,
+    "val_mae": 0.11688509273529053,
+    "seconds": 0.8178207000019029,
+    "task": "2D Reaching"
+  },
+  {
+    "model": "2D Reach-CNN",
+    "params": 41091,
+    "val_mse": 2.0632589468732478e-05,
+    "val_mae": 0.0034835084676742554,
+    "seconds": 0.9484811000002082,
+    "task": "2D Reaching"
+  },
+  {
+    "model": "2D Reach-Fluid",
+    "params": 369603,
+    "val_mse": 0.0009754072030385335,
+    "val_mae": 0.01994234569867452,
+    "seconds": 15.31311519999872,
+    "task": "2D Reaching"
+  },
+  {
+    "model": "2D Reach-Fluid+",
+    "params": 503571,
+    "val_mse": 0.00026201375760138035,
+    "val_mae": 0.01228302510579427,
+    "seconds": 15.95065070000419,
+    "task": "2D Reaching"
+  },
+  {
+    "model": "Pick&Pla-MLP",
+    "params": 302212,
+    "val_mse": 0.0029097532629966736,
+    "val_mae": 0.041548484563827516,
+    "seconds": 0.7142501999915112,
+    "task": "Pick&Place"
+  },
+  {
+    "model": "Pick&Pla-CNN",
+    "params": 41156,
+    "val_mse": 0.007817630380392075,
+    "val_mae": 0.0734758095741272,
+    "seconds": 1.2261964999925112,
+    "task": "Pick&Place"
+  },
+  {
+    "model": "Pick&Pla-Fluid",
+    "params": 369668,
+    "val_mse": 0.0020770553648471832,
+    "val_mae": 0.03246289253234863,
+    "seconds": 14.663026599999284,
+    "task": "Pick&Place"
+  },
+  {
+    "model": "Pick&Pla-Fluid+",
+    "params": 503636,
+    "val_mse": 0.0022672567814588547,
+    "val_mae": 0.03466828858852387,
+    "seconds": 16.292544599986286,
+    "task": "Pick&Place"
+  }
+]

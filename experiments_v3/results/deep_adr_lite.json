@@ -1,0 +1,72 @@
+[
+  {
+    "model": "Baseline(Q-compress)",
+    "params": 413928,
+    "val_acc": 0.982,
+    "dataset": "MNIST",
+    "seconds": 18.684936499994365
+  },
+  {
+    "model": "DeepADR(1L,h=8)",
+    "params": 127954,
+    "val_acc": 0.331,
+    "dataset": "MNIST",
+    "seconds": 97.34368589999212
+  },
+  {
+    "model": "DeepADR(2L,h=8)",
+    "params": 153322,
+    "val_acc": 0.316,
+    "dataset": "MNIST",
+    "seconds": 221.48049259999243
+  },
+  {
+    "model": "DeepADR(3L,h=8)",
+    "params": 178690,
+    "val_acc": 0.381,
+    "dataset": "MNIST",
+    "seconds": 389.29627189999155
+  },
+  {
+    "model": "DeepADR(3L,h=12)",
+    "params": 231286,
+    "val_acc": 0.518,
+    "dataset": "MNIST",
+    "seconds": 566.702328600004
+  },
+  {
+    "model": "Baseline(Q-compress)",
+    "params": 413928,
+    "val_acc": 0.865,
+    "dataset": "FashionMNIST",
+    "seconds": 6.84474999998929
+  },
+  {
+    "model": "DeepADR(1L,h=8)",
+    "params": 127954,
+    "val_acc": 0.505,
+    "dataset": "FashionMNIST",
+    "seconds": 34.90195049998874
+  },
+  {
+    "model": "DeepADR(2L,h=8)",
+    "params": 153322,
+    "val_acc": 0.494,
+    "dataset": "FashionMNIST",
+    "seconds": 69.83198709999851
+  },
+  {
+    "model": "DeepADR(3L,h=8)",
+    "params": 178690,
+    "val_acc": 0.471,
+    "dataset": "FashionMNIST",
+    "seconds": 104.11996909999289
+  },
+  {
+    "model": "DeepADR(3L,h=12)",
+    "params": 231286,
+    "val_acc": 0.634,
+    "dataset": "FashionMNIST",
+    "seconds": 162.5302714999998
+  }
+]

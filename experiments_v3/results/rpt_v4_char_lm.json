@@ -1,0 +1,35 @@
+{
+  "RPT-pure": {
+    "eval": {
+      "loss": 3.252,
+      "bpc": 4.692,
+      "tok_acc": 0.158
+    },
+    "seconds": 161,
+    "params": 142145,
+    "peak_gb": 0.05,
+    "sample": "\n\n\n\n\n\n\n                                                                                   "
+  },
+  "RPT-hint": {
+    "eval": {
+      "loss": 3.319814544916153,
+      "bpc": 4.789479980621585,
+      "tok_acc": 0.15125732421875
+    },
+    "seconds": 195.70233680000092,
+    "params": 146241,
+    "peak_gb": 0.191698432,
+    "sample": "                                                            "
+  },
+  "AR-baseline": {
+    "eval": {
+      "loss": 1.8733714789152145,
+      "bpc": 2.7027037423738034,
+      "tok_acc": 0.4415283203125
+    },
+    "seconds": 30.444557599999825,
+    "params": 246081,
+    "peak_gb": 0.191698432,
+    "sample": "\nThe shall the so the so the so therereren\n\n\n\nThin t t tin t"
+  }
+}

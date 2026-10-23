@@ -1,0 +1,9 @@
+torch
+torchvision
+numpy
+scipy
+scikit-learn
+huggingface_hub
+transformers
+timm
+pyarrow

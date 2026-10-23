@@ -1,0 +1,23 @@
+[
+  {
+    "model": "MLP-Baseline",
+    "params": 616999,
+    "val_mse": 0.5274232578853637,
+    "val_mae": 0.5163440669643923,
+    "seconds": 47.443810500000836
+  },
+  {
+    "model": "FluidVLA-4Modal",
+    "params": 1603616,
+    "val_mse": 0.4922487097756067,
+    "val_mae": 0.4839475920571483,
+    "seconds": 60.966605100009474
+  },
+  {
+    "model": "FluidVLA-NoWorld",
+    "params": 1603616,
+    "val_mse": 0.5448870829954287,
+    "val_mae": 0.5065420617287566,
+    "seconds": 60.6060862000013
+  }
+]

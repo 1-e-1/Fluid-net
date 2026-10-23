@@ -1,0 +1,32 @@
+[
+  {
+    "model": "Baseline-Q",
+    "params": 413928,
+    "val_acc": 0.976,
+    "seconds": 13.461470400001417
+  },
+  {
+    "model": "NC(s=0.05)",
+    "params": 519770,
+    "val_acc": 0.356,
+    "seconds": 49.70090990000244
+  },
+  {
+    "model": "NC(s=0.15)",
+    "params": 519770,
+    "val_acc": 0.425,
+    "seconds": 40.281152600000496
+  },
+  {
+    "model": "NC(s=0.30)",
+    "params": 519770,
+    "val_acc": 0.553,
+    "seconds": 40.55519269999786
+  },
+  {
+    "model": "NC-Diff(s=0.15)",
+    "params": 519770,
+    "val_acc": 0.403,
+    "seconds": 40.55379660000108
+  }
+]

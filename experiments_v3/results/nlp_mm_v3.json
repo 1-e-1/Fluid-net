@@ -1,0 +1,50 @@
+[
+  {
+    "model": "NLP-Baseline",
+    "params": 734568,
+    "val_acc": 0.8940568475452196,
+    "val_loss": 0.32645538826629483,
+    "seconds": 3.511924199992791,
+    "domain": "NLP"
+  },
+  {
+    "model": "NLP-Improved(h=12)",
+    "params": 4461120,
+    "val_acc": 0.8824289405684754,
+    "val_loss": 0.4020506062710932,
+    "seconds": 15.348420900001656,
+    "domain": "NLP"
+  },
+  {
+    "model": "NLP-Improved(h=16)",
+    "params": 4993392,
+    "val_acc": 0.8785529715762274,
+    "val_loss": 0.4092479175683448,
+    "seconds": 19.671776799994404,
+    "domain": "NLP"
+  },
+  {
+    "model": "MM-Baseline",
+    "params": 95978,
+    "val_acc": 0.8805555555555555,
+    "val_loss": 0.36314055389828154,
+    "seconds": 54.65696890000254,
+    "domain": "Multimodal"
+  },
+  {
+    "model": "MM-Improved(h=8)",
+    "params": 179282,
+    "val_acc": 0.5611111111111111,
+    "val_loss": 0.9362150536643135,
+    "seconds": 10.47346860000107,
+    "domain": "Multimodal"
+  },
+  {
+    "model": "MM-Improved(h=12)",
+    "params": 185046,
+    "val_acc": 0.8861111111111111,
+    "val_loss": 0.33754327297210696,
+    "seconds": 11.395226699998602,
+    "domain": "Multimodal"
+  }
+]

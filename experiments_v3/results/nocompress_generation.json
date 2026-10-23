@@ -1,0 +1,26 @@
+[
+  {
+    "model": "LSTM",
+    "params": 23908,
+    "val_acc": 0.855,
+    "seconds": 0.9608494000021892
+  },
+  {
+    "model": "MLP",
+    "params": 71012,
+    "val_acc": 1.0,
+    "seconds": 0.6273231000013766
+  },
+  {
+    "model": "NC-Gen(L4)",
+    "params": 123820,
+    "val_acc": 1.0,
+    "seconds": 9.181913500000519
+  },
+  {
+    "model": "NC-Gen(L8)",
+    "params": 240812,
+    "val_acc": 1.0,
+    "seconds": 14.346895899998344
+  }
+]

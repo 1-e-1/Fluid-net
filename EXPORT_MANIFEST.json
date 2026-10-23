@@ -1,0 +1,397 @@
+{
+  "export_date": "2026-10-24",
+  "owner": "1-e-1",
+  "source_files": [
+    {
+      "path": "fluid_net.py",
+      "source_sha256": "373241a9f7d364008e5335581af05e5a9f58408435c79dfe972fc2d8ce54de33"
+    },
+    {
+      "path": "fluid_net_pro.py",
+      "source_sha256": "d38bc89990477920e761cea5a891dc378371c928ba6a6eda23986f9f34c404a3"
+    },
+    {
+      "path": "fluid_net_pro_max.py",
+      "source_sha256": "ebad6f8f6dd02f8c9140f3e44026598b06b37773abce795fbea985b9b2d4f046"
+    },
+    {
+      "path": "benchmarks/cifar100_benchmark.py",
+      "source_sha256": "fd9c38f7abbbdc394e65144111f35b75c9fc0bd34712a00a476254bb36f1499f"
+    },
+    {
+      "path": "benchmarks/cv_nlp_task_benchmark.py",
+      "source_sha256": "df649ab1249961d038a8ce9ca9d7bde6929b294f941e38018a70b12403909aea"
+    },
+    {
+      "path": "benchmarks/exchange_rate_benchmark.py",
+      "source_sha256": "438105a68417ff0eaa5317c410529e5f8fe378106898e662aa628d238e315f42"
+    },
+    {
+      "path": "benchmarks/mnist_robustness_benchmark.py",
+      "source_sha256": "c9fa05173c5f371e2df269450fdca699b99f1d21f4d2bea1f6a4e0bafcf48d7b"
+    },
+    {
+      "path": "benchmarks/pro_max_cv_nlp_light_benchmark.py",
+      "source_sha256": "ae53b57f308a8482021dfc4a098982213937f7aa57dc405de4e978baf7543a79"
+    },
+    {
+      "path": "benchmarks/pro_max_hparam_sweep.py",
+      "source_sha256": "2aab271e67ffee95b5c15cfbbdb1a435102ff14a66cd7f05b59afacfedddf179"
+    },
+    {
+      "path": "benchmarks/real_cv_nlp_benchmark.py",
+      "source_sha256": "fac35247df8b17b2606c5f4612efb5bed46d680cf4ab272d31b3b1b16ccd9438"
+    },
+    {
+      "path": "benchmarks/robot_arm_sequence_benchmark.py",
+      "source_sha256": "32a5f99175b3100b1ff97483f2ce18fe592c6c11bee6b862a9956276a0e230ca"
+    },
+    {
+      "path": "experiments_v2/models/deep_fluid.py",
+      "source_sha256": "c9562d3ea50c6c6d37ff59d0cbbf2a223e02f65b1b8506a2b8ec388bc01730e2"
+    },
+    {
+      "path": "experiments_v2/results/lean_results.json",
+      "source_sha256": "33180be209556148d61010fc7ade089003cb55ef1381ccf3de0c9ae46dafefb5"
+    },
+    {
+      "path": "experiments_v2/results/nlp_mm_results.json",
+      "source_sha256": "315736b7dc317f5ce07210258e9dee0b9047af5175f741dd66489ff768613381"
+    },
+    {
+      "path": "experiments_v2/tests/benchmark.py",
+      "source_sha256": "3e49378e33a831e956b983350e2c54790aca84308b74e254b6fe518034a2ee3a"
+    },
+    {
+      "path": "experiments_v2/tests/diagnose_depth.py",
+      "source_sha256": "a22373f1bb8d468bf04e79a7dbb2c959322647f2d02a426325d13ecc2f16aac2"
+    },
+    {
+      "path": "experiments_v2/tests/fix_depth_test.py",
+      "source_sha256": "c94774333f318e0562d0211cdeaf621585917ca5c015cf76d20bcdbbe7158d62"
+    },
+    {
+      "path": "experiments_v2/tests/lean_test.py",
+      "source_sha256": "7db52e8211d503691e51b74aeb6c3a5930e7928a729b83622b2933b9844d8ad7"
+    },
+    {
+      "path": "experiments_v2/tests/nlp_multimodal_test.py",
+      "source_sha256": "67b189c14c444ce45ca25aeedc46d150153d50458ce91a1119e1cb34f13baedd"
+    },
+    {
+      "path": "experiments_v2/tests/phase1_fluidformer_v2.py",
+      "source_sha256": "63bd81d998af54471f3e670393135f78320fdd96de7d89a9ea4818dd4bb90935"
+    },
+    {
+      "path": "experiments_v2/tests/phase1_v2.py",
+      "source_sha256": "793fddefd3d0a759472647626c9ec539f8e8207f2ed4f2ba74bccb0cc1d42c2b"
+    },
+    {
+      "path": "experiments_v2/tests/phase2_wide.py",
+      "source_sha256": "d0723955d31bfb8d4104f932c22a8def087fcf807ff8bff8d9168993bae05374"
+    },
+    {
+      "path": "experiments_v2/tests/quick_test.py",
+      "source_sha256": "fe1288119b8b3977623f2876e67e76e492b8f7159bcb39e672b2cafbd03bdf62"
+    },
+    {
+      "path": "experiments_v2/tests/quick_v2.py",
+      "source_sha256": "39d01b1e6f23d055b004539f6b316802b047c30a090c3e4fc6318c77f08ad8f0"
+    },
+    {
+      "path": "experiments_v3/PERFORMANCE_REPORT.txt",
+      "source_sha256": "8f521b2a11f8c737076f568fecf8d47853b8cf130edcd4e5a299372a34b0b6b0"
+    },
+    {
+      "path": "experiments_v3/models/improved_fluid.py",
+      "source_sha256": "ecc55f83f6232cf971190e4186c01149908e3da26b220ff964be35e6cd6d7e5b"
+    },
+    {
+      "path": "experiments_v3/models/pro_max_nc.py",
+      "source_sha256": "7d9175e8e2cceac43dce43883c11bdf9a5f95f7bb352f47052500e5f8bd59b73"
+    },
+    {
+      "path": "experiments_v3/paper/FluidNet-NC_架构论文_中文.md",
+      "source_sha256": "5c98e3d1ac0f8978457048f931ee56c09e78c65a02aa2658c83637e0ca95a2b3"
+    },
+    {
+      "path": "experiments_v3/paper/FluidNet-NC_论文_中文.md",
+      "source_sha256": "ab83d6c35f9e3e4d9f962242f9b2d5c02590a388aa36367beaf64213e70b244a"
+    },
+    {
+      "path": "experiments_v3/results/cv_final.json",
+      "source_sha256": "67badd58526a7e9139f60c263368894f24a3194d0ae5112c7bebd86fb34be737"
+    },
+    {
+      "path": "experiments_v3/results/deep_adr_lite.json",
+      "source_sha256": "3f5434e2f40421e48027e7c27bef08987200c38ff209c5ab5b79218889c614f7"
+    },
+    {
+      "path": "experiments_v3/results/extended_cv.json",
+      "source_sha256": "c1fda5da3508b4f697d028d177ef04dbc807a5d14eefcd95204cfbcc24273b8a"
+    },
+    {
+      "path": "experiments_v3/results/final_report.json",
+      "source_sha256": "609f4ce48e44f1364a28e8eb13fe0bb996abe5434c70aeb36885754c7535677b"
+    },
+    {
+      "path": "experiments_v3/results/fmnist_tune.json",
+      "source_sha256": "165bb978352ebc11a0bf25666ae0a3a5890f09f711ddb587cbbb8ec0c0d131b2"
+    },
+    {
+      "path": "experiments_v3/results/hierarchical_results.json",
+      "source_sha256": "8ec0a9067c32780f443d9f905409d89f8eb7ca09bee28a81959efe96b1cf961e"
+    },
+    {
+      "path": "experiments_v3/results/hierarchical_v3.json",
+      "source_sha256": "80d0e1c274c7032adc5090a99daef8abaa1e8b95488ecd78a8105b90cf1e07b8"
+    },
+    {
+      "path": "experiments_v3/results/nlp_mm_v3.json",
+      "source_sha256": "c57dafb316c2f18a7bd13a62418666a9a10b810113b1ce20b7ebd4c4fa19b4d1"
+    },
+    {
+      "path": "experiments_v3/results/nocompress_final.json",
+      "source_sha256": "7cd3a12f9bdf95f1fee5b6ca01021bbf918bc567e917d15b2b3a5c07a0ca0a8f"
+    },
+    {
+      "path": "experiments_v3/results/nocompress_generation.json",
+      "source_sha256": "f680bb9776a4ecd4fc7d7bf647a82d44439c9aab2371705756c7d5cf411298da"
+    },
+    {
+      "path": "experiments_v3/results/nocompress_nlp_mm.json",
+      "source_sha256": "dd434a989c6f60b327b05d12a46e496d173bce25cab3ac7606d8e4c0d9691a7d"
+    },
+    {
+      "path": "experiments_v3/results/nocompress_quick.json",
+      "source_sha256": "29248f13384cba6f3ea117e61a610fe15ddc867d390de7df3ab40191529db5e2"
+    },
+    {
+      "path": "experiments_v3/results/nocompress_results.json",
+      "source_sha256": "a4980d5e90313d1df14d88e868382b994c53334a4190ed3e5dc3d6ac11dc2fda"
+    },
+    {
+      "path": "experiments_v3/results/nocompress_v6.json",
+      "source_sha256": "c94948d23cca45e7aaf9d95561f1806b8ffdb0c3f46441e34218f9df9ca2080c"
+    },
+    {
+      "path": "experiments_v3/results/pro_max_nc_ablation.json",
+      "source_sha256": "9a95e50b828ac77141bd74424d37a8cef2361b54c8ef8f2e73dc03fec0fa083a"
+    },
+    {
+      "path": "experiments_v3/results/pro_max_nc_bench.json",
+      "source_sha256": "7a521c985b2dadb49e82e37895e2c3ca231f694767c7c1da6dc2d9e39d63265c"
+    },
+    {
+      "path": "experiments_v3/results/rpt_all.json",
+      "source_sha256": "930c700960da72cf39cddd21ac10bece08532adef5bec94c2679c1319736dbdf"
+    },
+    {
+      "path": "experiments_v3/results/rpt_poc.json",
+      "source_sha256": "f6f20c58d62b44f8827fb59374238a60c031e7088eabd94fe391301bd58ade7a"
+    },
+    {
+      "path": "experiments_v3/results/rpt_summary.md",
+      "source_sha256": "81258136e7e818d3e952d6d481ce92f676fad4ce34a42845190532bc9e9b5f8f"
+    },
+    {
+      "path": "experiments_v3/results/rpt_v2.json",
+      "source_sha256": "2da2877d4de7024de1c13600f089968c5b4152544e85fbe439026488a4663418"
+    },
+    {
+      "path": "experiments_v3/results/rpt_v3.json",
+      "source_sha256": "5acc3a0aff4e76fcabefb3ce8234ba608752bea477f4bf08762ac6ee660ed078"
+    },
+    {
+      "path": "experiments_v3/results/rpt_v4_char_lm.json",
+      "source_sha256": "6cdf830e3b17a2e80d22bf7fe24d5be835ed882ee30620374bec7e5f396b4884"
+    },
+    {
+      "path": "experiments_v3/results/rpt_v5_varlen.json",
+      "source_sha256": "f28b4e43bcb48ffd8f275488daf8d951410c7cb800935e2714bd3e8935e88547"
+    },
+    {
+      "path": "experiments_v3/results/strict_compare.json",
+      "source_sha256": "70fceb7cec0a2eddb44ff059b27edd0dc1a03c9ee76181b7be3b14cef81b520d"
+    },
+    {
+      "path": "experiments_v3/results/temporal_suite.json",
+      "source_sha256": "a5cd0e76342f64393312e56e2e4e85d4c4fe57ff4e9bce34c12b7f53e3e55ca0"
+    },
+    {
+      "path": "experiments_v3/tests/deep_adr_test.py",
+      "source_sha256": "2cfa94710ec5a043d45b83fc305ee6e5705cb2909acc7aa0819152389840c9b6"
+    },
+    {
+      "path": "experiments_v3/tests/full_benchmark.py",
+      "source_sha256": "a0af7ff0fac58e35a78e1f1ba3346de0ee0ef8ea08d1feadcbbdeeb113f76e10"
+    },
+    {
+      "path": "experiments_v3/tests/hierarchical_test.py",
+      "source_sha256": "e840a2799e95f612791e5ebc83a86aef6752691b3ae3ce7330e1a77c15294b0a"
+    },
+    {
+      "path": "experiments_v3/tests/nocompress_generation.py",
+      "source_sha256": "4f925424df43ddc09b42395ee80e9ca3145417a2cd1999cab3465398622b8027"
+    },
+    {
+      "path": "experiments_v3/tests/nocompress_nlp_mm.py",
+      "source_sha256": "5c5791be0320552d62fe0071bf491ec5684e5c867333914ae40b761cf656a789"
+    },
+    {
+      "path": "experiments_v3/tests/nocompress_test.py",
+      "source_sha256": "bc08b23d0f8053479bba4d0a63db83a6eccf22dd8aa0c0fac590f6384409d8ad"
+    },
+    {
+      "path": "experiments_v3/tests/pro_max_nc_ablation.py",
+      "source_sha256": "02642bdcab9ac586722ad4cc70f4d5fa42dbd8999f4df0e0fbd6d5cf056c81a9"
+    },
+    {
+      "path": "experiments_v3/tests/pro_max_nc_bench.py",
+      "source_sha256": "cb50a0c52a0affe94c2aee45902dd3d17b76423cc9f0f7f7137f31b1ff0aa5c5"
+    },
+    {
+      "path": "experiments_v3/tests/recursive_decode_transformer.py",
+      "source_sha256": "3eaadc32f0aeff7be06a938896398c2187b3e8264f106319c49248d4ca35c282"
+    },
+    {
+      "path": "experiments_v3/tests/rpt_decode_v2.py",
+      "source_sha256": "1bc816b856a3fccddfe7edd99edacde2e79dcf49f95d6505603de6efb1d8f46e"
+    },
+    {
+      "path": "experiments_v3/tests/rpt_decode_v3.py",
+      "source_sha256": "6e5000d0235ebf9980ad7851467f9c0b5893addb34aa8e16035cb1ac90a97260"
+    },
+    {
+      "path": "experiments_v3/tests/rpt_decode_v4.py",
+      "source_sha256": "e495b8c807a363895c442d1cf857ae54a4bf15ad2ac911a918fcad3e799b8b9b"
+    },
+    {
+      "path": "experiments_v3/tests/rpt_decode_v5.py",
+      "source_sha256": "dc1a8a1d5cc99cceca8a3011015d6c1cfd54101be8fd36b111d96dd953ae4b41"
+    },
+    {
+      "path": "experiments_v3/tests/strict_compare.py",
+      "source_sha256": "2b54d2794c855670a05704a0033435fd08275215023f97199cce978f6694b253"
+    },
+    {
+      "path": "experiments_v3/tests/temporal_suite.py",
+      "source_sha256": "4a41c7df30bf1f2a7575b84745a6d127f03439ca608e5be11073fc894e2f0cc4"
+    },
+    {
+      "path": "experiments_v3/vla/benchmark_quad_modal.py",
+      "source_sha256": "50d04119c6832093c4dd4a7292da78a336b9092c579fa30ad19d0c0e2c9fafa6"
+    },
+    {
+      "path": "experiments_v3/vla/libero_results.json",
+      "source_sha256": "ce5fa27fc1cf0a69e70f849540c97a6f218e08e3709ac20c55ff464471b091da"
+    },
+    {
+      "path": "experiments_v3/vla/pusht_results.json",
+      "source_sha256": "1b3daf89c80edb288fb06d82410d1fe5e89d6e1a0716ffd019a502b780e7e504"
+    },
+    {
+      "path": "experiments_v3/vla/quad_modal_results.json",
+      "source_sha256": "5f93714234590a75b2c5139637704595497f0a5a9c8432dbfd5eb1b8f4807daa"
+    },
+    {
+      "path": "experiments_v3/vla/quad_modal_vla.py",
+      "source_sha256": "dbc54c5b099cd68e00d799a96bfb6d6f96ae81ed125d7439962e84b9b95c477c"
+    },
+    {
+      "path": "experiments_v3/vla/quad_v2_results.json",
+      "source_sha256": "59bd42d36757cfb719c1896c9398e586103d9df5298d7d4522d8cae0a9177654"
+    },
+    {
+      "path": "experiments_v3/vla/test_pusht.py",
+      "source_sha256": "9cc4d3b619661a3546db1d924b05c9085e81d54ebef0046330dd4923a50b88e3"
+    },
+    {
+      "path": "experiments_v3/vla/trajectory_results.json",
+      "source_sha256": "6c1183da7b7645bdaf8daed229338e4049304f06df2750e54ab16dcaab6282aa"
+    },
+    {
+      "path": "experiments_v3/vla/vla_benchmark.py",
+      "source_sha256": "01ff34afc7549f97f713771c5ef945323d63ba5883a2561fc16fbd3332999b34"
+    },
+    {
+      "path": "experiments_v3/vla/vla_final_report.json",
+      "source_sha256": "40fd18002154eb4578f2724efad8256718e61bf62a291248b32cd299bd649101"
+    },
+    {
+      "path": "experiments_v3/vla/vla_results.json",
+      "source_sha256": "0813ef459fd0e3afa3716f6863c017ad46da22a3fb8353c5282eb96b256c1f37"
+    },
+    {
+      "path": "improvements/benchmark_all.py",
+      "source_sha256": "d8182a3d7385d4aaf4f83345386a5c41e06beceedf279453a06a98e6a416d14d"
+    },
+    {
+      "path": "improvements/benchmark_all_v2.py",
+      "source_sha256": "aa5b3b861ad037a13af5e60bc81c5724332f05169d1e486b58587e4970d4b415"
+    },
+    {
+      "path": "improvements/benchmark_all_v3.py",
+      "source_sha256": "e0ad00959c9eddde3756830ef29490abe9c5ca8efe878c1f3d674748c6944a41"
+    },
+    {
+      "path": "improvements/ensemble_wrapper.py",
+      "source_sha256": "15e5f335e3e77f305a36206428763a28e9232715b60900c890d0bfaf4bd5a065"
+    },
+    {
+      "path": "improvements/final_benchmark.py",
+      "source_sha256": "34c453b4293ede8809d0906be5f60d02895a80c278800b3f7f47e6d287db0f65"
+    },
+    {
+      "path": "improvements/five_step_test.py",
+      "source_sha256": "0f1ef134c284ef50dd642f62ce94bb854f777e81f104af6ab3cdbc43b0fd47bb"
+    },
+    {
+      "path": "improvements/fluid_former.py",
+      "source_sha256": "78fecf1f5ff1f468546cf5eb0cf3f35c935e53d0473124332f9891b91f04bbf4"
+    },
+    {
+      "path": "improvements/fluid_former_lite.py",
+      "source_sha256": "4f6cb5615a6a60866b09f98156f45e60641d53bb399c2a39242c6d774f33e7fa"
+    }
+  ],
+  "portability_edits": [
+    "experiments_v2/models/deep_fluid.py",
+    "experiments_v2/tests/benchmark.py",
+    "experiments_v2/tests/diagnose_depth.py",
+    "experiments_v2/tests/fix_depth_test.py",
+    "experiments_v2/tests/lean_test.py",
+    "experiments_v2/tests/nlp_multimodal_test.py",
+    "experiments_v2/tests/phase1_fluidformer_v2.py",
+    "experiments_v2/tests/phase1_v2.py",
+    "experiments_v2/tests/phase2_wide.py",
+    "experiments_v2/tests/quick_test.py",
+    "experiments_v2/tests/quick_v2.py",
+    "experiments_v3/models/improved_fluid.py",
+    "experiments_v3/models/pro_max_nc.py",
+    "experiments_v3/tests/deep_adr_test.py",
+    "experiments_v3/tests/full_benchmark.py",
+    "experiments_v3/tests/hierarchical_test.py",
+    "experiments_v3/tests/nocompress_generation.py",
+    "experiments_v3/tests/nocompress_nlp_mm.py",
+    "experiments_v3/tests/nocompress_test.py",
+    "experiments_v3/tests/pro_max_nc_ablation.py",
+    "experiments_v3/tests/pro_max_nc_bench.py",
+    "experiments_v3/tests/recursive_decode_transformer.py",
+    "experiments_v3/tests/rpt_decode_v2.py",
+    "experiments_v3/tests/rpt_decode_v3.py",
+    "experiments_v3/tests/rpt_decode_v4.py",
+    "experiments_v3/tests/rpt_decode_v5.py",
+    "experiments_v3/tests/strict_compare.py",
+    "experiments_v3/tests/temporal_suite.py",
+    "experiments_v3/vla/benchmark_quad_modal.py",
+    "experiments_v3/vla/quad_modal_vla.py",
+    "experiments_v3/vla/test_pusht.py",
+    "experiments_v3/vla/vla_benchmark.py",
+    "improvements/fluid_former_lite.py"
+  ],
+  "note": "Hashes identify original copied files before export-only edits. Generated release files are additional. No raw datasets/checkpoints are distributed.",
+  "maintenance_fixes": [
+    "improvements/benchmark_all_v2.py: validation indentation and current-batch logits"
+  ]
+}

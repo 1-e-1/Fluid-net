@@ -1,0 +1,57 @@
+[
+  {
+    "model": "CV-Baseline(h=1)",
+    "params": 413928,
+    "val_acc": 0.97,
+    "val_loss": 0.09102177876234055,
+    "seconds": 7.596003999999084,
+    "domain": "CV"
+  },
+  {
+    "model": "CV-Lean(h=8)",
+    "params": 325760,
+    "val_acc": 0.953,
+    "val_loss": 0.13970882987976074,
+    "seconds": 63.20806840000296,
+    "domain": "CV"
+  },
+  {
+    "model": "NLP-Baseline(BoW→ADR)",
+    "params": 2141744,
+    "val_acc": 0.8475,
+    "val_loss": 1.1986362361907958,
+    "seconds": 14.658118700004707,
+    "domain": "NLP"
+  },
+  {
+    "model": "NLP-Lean(BoW→Fourier→ADR)",
+    "params": 3772968,
+    "val_acc": 0.8625,
+    "val_loss": 0.8127921664714813,
+    "seconds": 17.21524859999772,
+    "domain": "NLP"
+  },
+  {
+    "model": "NLP-Lean(h=12)",
+    "params": 4301480,
+    "val_acc": 0.8475,
+    "val_loss": 0.8846743249893189,
+    "seconds": 30.502584499998193,
+    "domain": "NLP"
+  },
+  {
+    "model": "MM-Baseline",
+    "params": 95978,
+    "val_acc": 0.37666666666666665,
+    "val_loss": 0.9471050357818603,
+    "seconds": 4.569201500002237,
+    "domain": "Multimodal"
+  },
+  {
+    "model": "MM-*",
+    "domain": "Multimodal",
+    "status": "error",
+    "reason": "mat1 and mat2 shapes cannot be multiplied (256x8 and 1x4)",
+    "trace": "le \"C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\torch\\nn\\modules\\linear.py\", line 134, in forward\n    return F.linear(input, self.weight, self.bias)\n           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: mat1 and mat2 shapes cannot be multiplied (256x8 and 1x4)\n"
+  }
+]

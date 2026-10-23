@@ -1,0 +1,44 @@
+[
+  {
+    "model": "MLP-Baseline",
+    "params": 616999,
+    "val_mse": 0.0039010862431355887,
+    "val_mae": 0.049857428346361435,
+    "seconds": 1.9579519999970216
+  },
+  {
+    "model": "CNN-Baseline",
+    "params": 695815,
+    "val_mse": 0.00454970680815833,
+    "val_mae": 0.053562759331294466,
+    "seconds": 2.5099881000060122
+  },
+  {
+    "model": "FluidVLA-4Modal",
+    "params": 1603616,
+    "val_mse": 0.006405991324356624,
+    "val_mae": 0.06281785372325352,
+    "seconds": 10.323429099997156
+  },
+  {
+    "model": "FluidVLA-NoWorld",
+    "params": 1603616,
+    "val_mse": 0.003947120815515518,
+    "val_mae": 0.04980257214818682,
+    "seconds": 10.206703899995773
+  },
+  {
+    "model": "FluidVLA-NoText",
+    "params": 1603616,
+    "val_mse": 0.00899814750467028,
+    "val_mae": 0.07556553295680454,
+    "seconds": 9.927155700002913
+  },
+  {
+    "model": "FluidVLA-Vis+State",
+    "params": 1603616,
+    "val_mse": 0.008990315186125891,
+    "val_mae": 0.07554562875202724,
+    "seconds": 9.962489300000016
+  }
+]

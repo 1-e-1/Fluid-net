@@ -1,0 +1,44 @@
+[
+  {
+    "model": "FMNIST-Baseline",
+    "params": 413928,
+    "val_acc": 0.892,
+    "val_loss": 0.353412407875061,
+    "seconds": 13.056161500004237
+  },
+  {
+    "model": "Enhanced(h=12,q=48)",
+    "params": 346884,
+    "val_acc": 0.875,
+    "val_loss": 0.40769390869140626,
+    "seconds": 149.45966009999393
+  },
+  {
+    "model": "Enhanced(h=14,q=48)",
+    "params": 361090,
+    "val_acc": 0.881,
+    "val_loss": 0.3921485595703125,
+    "seconds": 170.6768529999972
+  },
+  {
+    "model": "Enhanced(h=16,q=64)",
+    "params": 419712,
+    "val_acc": 0.889,
+    "val_loss": 0.3801200580596924,
+    "seconds": 193.57492600000114
+  },
+  {
+    "model": "Enhanced(h=12,s=8)",
+    "params": 346884,
+    "val_acc": 0.879,
+    "val_loss": 0.40955867767333987,
+    "seconds": 222.89950440000393
+  },
+  {
+    "model": "MultiScale(h=12)",
+    "params": 379284,
+    "val_acc": 0.867,
+    "val_loss": 0.41946933937072756,
+    "seconds": 110.70782119999058
+  }
+]

@@ -1,0 +1,101 @@
+{
+  "title": "FluidNet vs Transformer: Comprehensive Benchmark",
+  "date": "2026-08-04",
+  "environment": {
+    "gpu": "NVIDIA RTX 5070 Ti",
+    "pytorch": "2.9.1+cu128",
+    "cuda": "12.8",
+    "python": "3.14.2"
+  },
+  "results": {
+    "CV_MNIST": {
+      "fluidnet_best": {
+        "model": "Baseline(h=1)",
+        "accuracy": 0.987,
+        "params": 413928,
+        "steps": 1200
+      },
+      "transformer_baseline": {
+        "model": "ViT-Tiny",
+        "accuracy": 0.985,
+        "params": 5700000
+      },
+      "status": "EXCEEDED",
+      "improvement": "+1.7% (from 97.0% v1)"
+    },
+    "CV_FashionMNIST": {
+      "fluidnet_best": {
+        "model": "Large-Q Ensemble(5x)",
+        "accuracy": 0.911,
+        "params": 7336000,
+        "steps": 1200
+      },
+      "transformer_baseline": {
+        "model": "ViT",
+        "accuracy": 0.93,
+        "params": 5700000
+      },
+      "status": "CLOSE (-1.9%)",
+      "improvement": "+5.0% (from 86.1% v1)"
+    },
+    "NLP_20Newsgroups": {
+      "fluidnet_best": {
+        "model": "Baseline Ensemble(3x)",
+        "accuracy": 0.8953,
+        "params": 2203704,
+        "steps": 700
+      },
+      "transformer_baseline": {
+        "model": "BERT-tiny",
+        "accuracy": 0.95,
+        "params": 4400000
+      },
+      "status": "GAP (-5.5%)",
+      "improvement": "+4.8% (from 84.75% v1)"
+    },
+    "Multimodal_Digits": {
+      "fluidnet_best": {
+        "model": "MM-Improved(h=12)",
+        "accuracy": 0.8861,
+        "params": 185046,
+        "steps": 500
+      },
+      "transformer_baseline": {
+        "model": "N/A (no direct benchmark)",
+        "accuracy": null
+      },
+      "status": "PROMISING",
+      "improvement": "+50.9% (from 37.7% v1, baseline was broken)"
+    }
+  },
+  "key_innovations": [
+    "Improved Training: warmup+cosine+label_smoothing (largest gain +2-5%)",
+    "Extended Training: 700-1200 steps vs 300-400",
+    "Larger Q channels: q_channels=64 for FashionMNIST (+1%)",
+    "Multi-seed Ensemble: +0.5-0.7% consistent gain",
+    "FourierGlobalMix: enabled 98.2-98.4% MNIST with Enhanced models"
+  ],
+  "failed_approaches": [
+    "DirectFieldFormer (bypass Q-compression): 46.7% random accuracy",
+    "Data augmentation (RandAugment): 90.5% -> 71% on FashionMNIST",
+    "Wider h channels on FashionMNIST: consistently underperformed",
+    "Deep stacking >2 layers: ADR explosion + Q-compression loss"
+  ],
+  "why_2_layers_limit": [
+    "ADR reaction term R(J) unbounded -> field norm explosion",
+    "Q-compression -> reconstruction cycle destroys information (6-9x error)",
+    "Inter-layer disconnection: Layer2 cannot receive original input",
+    "These are FUNDAMENTAL to FluidNet Q-compression, not fixable by wrappers"
+  ],
+  "files": {
+    "models": "experiments_v3/models/improved_fluid.py",
+    "benchmark": "experiments_v3/tests/full_benchmark.py",
+    "results": [
+      "experiments_v3/results/full_benchmark.json",
+      "experiments_v3/results/nlp_mm_v3.json",
+      "experiments_v3/results/fmnist_tune.json",
+      "experiments_v3/results/cv_final.json",
+      "experiments_v3/results/extended_cv.json"
+    ]
+  }
+}

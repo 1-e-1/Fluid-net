@@ -1,0 +1,50 @@
+[
+  {
+    "model": "NLP-Baseline(Q)",
+    "params": 734568,
+    "val_acc": 0.8953488372093024,
+    "val_loss": 0.34316441439842993,
+    "seconds": 5.384395700002642,
+    "domain": "NLP"
+  },
+  {
+    "model": "NLP-NC(L4)",
+    "params": 6698372,
+    "val_acc": 0.8927648578811369,
+    "val_loss": 0.3611073289884769,
+    "seconds": 16.33572709999862,
+    "domain": "NLP"
+  },
+  {
+    "model": "NLP-NC(L8)",
+    "params": 6986116,
+    "val_acc": 0.8914728682170543,
+    "val_loss": 0.35913696205508183,
+    "seconds": 31.048826099999133,
+    "domain": "NLP"
+  },
+  {
+    "model": "MM-Baseline(Q)",
+    "params": 95978,
+    "val_acc": 0.8944444444444445,
+    "val_loss": 0.3515610529316796,
+    "seconds": 62.6458535999991,
+    "domain": "Multimodal"
+  },
+  {
+    "model": "MM-NC(L4)",
+    "params": 629954,
+    "val_acc": 0.9916666666666667,
+    "val_loss": 0.06401799759931034,
+    "seconds": 9.503501099999994,
+    "domain": "Multimodal"
+  },
+  {
+    "model": "MM-NC(L8)",
+    "params": 1148098,
+    "val_acc": 0.9916666666666667,
+    "val_loss": 0.06255261500676473,
+    "seconds": 16.73243399999774,
+    "domain": "Multimodal"
+  }
+]
